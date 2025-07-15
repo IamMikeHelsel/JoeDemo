@@ -1,0 +1,143 @@
+
+:root {
+    --board-bg: #1a2a3a;
+    --cell-bg: #1f3641;
+    --cell-hover-bg: #2c4a58;
+    --ship-bg: #607d8b;
+    --hit-bg: #ff4c4c;
+    --miss-bg: #4caf50;
+    --text-light: #f0f8ff;
+    --text-dark: #333;
+    --primary-accent: #31c3bd;
+    --secondary-accent: #f2b137;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--board-bg);
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    background-color: var(--cell-bg);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    color: var(--primary-accent);
+    margin-bottom: 20px;
+}
+
+#game-boards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 35px);
+    grid-template-rows: repeat(10, 35px);
+    border: 3px solid var(--primary-accent);
+    border-radius: 5px;
+}
+
+.grid-cell {
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--board-bg);
+    background-color: var(--cell-bg);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#player-board .grid-cell:hover {
+    background-color: var(--cell-hover-bg);
+}
+
+#opponent-board .grid-cell:hover {
+    background-color: var(--secondary-accent);
+}
+
+.ship {
+    background-color: var(--ship-bg);
+}
+
+/* Hide opponent's ships by default */
+#opponent-board .ship {
+    background-color: var(--cell-bg);
+}
+
+.hit {
+    background-color: var(--hit-bg) !important;
+}
+
+.miss {
+    background-color: var(--miss-bg) !important;
+}
+
+#game-info button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-accent);
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#game-info button:hover {
+    background-color: #2aa8a3;
+}
+
+#ship-placement {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--board-bg);
+    border-radius: 10px;
+}
+
+#ship-list .ship {
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--cell-bg);
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+#ship-list .ship.selected {
+    border-color: var(--secondary-accent);
+    color: var(--secondary-accent);
+}
+
+#invitation-link {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--board-bg);
+    border-radius: 10px;
+}
+
+#game-link {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: var(--cell-bg);
+    border: 1px solid var(--primary-accent);
+    color: var(--text-light);
+    border-radius: 5px;
+}

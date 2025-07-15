@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Battleship</h1>
+        <div id="game-boards">
+            <div>
+                <p>Your Board</p>
+                <div id="player-board" class="grid-container"></div>
+            </div>
+            <div id="opponent-board-container" style="display: none;">
+                <p>Opponent's Board</p>
+                <div id="opponent-board" class="grid-container"></div>
+            </div>
+        </div>
+        <div id="game-info">
+            <p id="game-status">Place your ships!</p>
+            <p id="turn-info"></p>
+        </div>
+        <div id="ship-placement">
+            <h2>Place Your Ships</h2>
+            <div id="ship-list">
+                <div class="ship-item" data-ship="carrier" data-length="5">Carrier (5)</div>
+                <div class="ship-item" data-ship="battleship" data-length="4">Battleship (4)</div>
+                <div class="ship-item" data-ship="cruiser" data-length="3">Cruiser (3)</div>
+                <div class="ship-item" data-ship="submarine" data-length="3">Submarine (3)</div>
+                <div class="ship-item" data-ship="destroyer" data-length="2">Destroyer (2)</div>
+            </div>
+            <div>
+                <button id="rotate-ship">Rotate</button>
+                <button id="reset-placement">Reset</button>
+                <button id="start-game" disabled>Start Game</button>
+            </div>
+        </div>
+        <div id="invitation-link" style="display: none;">
+            <p>Share this link to invite another player:</p>
+            <input type="text" id="game-link" readonly>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

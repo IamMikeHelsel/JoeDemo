@@ -1,0 +1,6 @@
+{
+  "name": "AI Battleship Arena",
+  "description": "A modern take on the classic battleship game. Challenge a friend in Player-vs-Player mode or test your strategic skills against a smart AI opponent powered by Google's Gemini API. Place your ships, take aim, and fire to sink the enemy fleet and claim victory on the high seas.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
