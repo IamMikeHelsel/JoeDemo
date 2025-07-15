@@ -6,6 +6,8 @@ A set of 3 demos showing the state of prototyping apps these days. Each demo sho
 
 A simple battleship game backend built with Rust and Actix Web, serving static HTML/CSS/JS files. Demonstrates how to quickly set up a web server with file serving capabilities.
 
+![Demo 1 Screenshot](screenshots/demo1-screenshot.png)
+
 **Tech Stack:**
 - Rust with Actix Web framework
 - Static HTML/CSS/JavaScript frontend
@@ -18,11 +20,13 @@ cargo run
 ```
 Then open http://127.0.0.1:8080 in your browser.
 
-## Demo 2: AI-Powered Goal Breakdown App 
+## Demo 2: AI-Powered Goal Breakdown App
 **Location:** `demo_2_claude/`
-link: [Demo 2 Live](https://claude.ai/public/artifacts/a62dd197-fcf0-4759-bc1e-d7f4a74ebea0)
+**Live Demo:** [Demo 2 Live](https://claude.ai/public/artifacts/a62dd197-fcf0-4759-bc1e-d7f4a74ebea0)
 
 A React application that breaks down high-level goals into actionable tasks using AI. Features hierarchical task management with time estimation and confidence levels.
+
+![Demo 2 Screenshot](screenshots/demo2-screenshot.png)
 
 **Tech Stack:**
 - React with TypeScript
@@ -43,6 +47,8 @@ This is a single TSX file intended for integration into a larger React applicati
 **Location:** `demo_3_battleship/ai-battleship-arena/`
 
 A full-featured battleship game with AI opponent powered by Google's Gemini AI. Features both Player vs AI and Player vs Player modes.
+
+![Demo 3 Screenshot](screenshots/demo3-screenshot.png)
 
 **Tech Stack:**
 - React with TypeScript
