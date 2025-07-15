@@ -88,4 +88,4 @@ Each demo is self-contained and can be run independently. Choose the demo that b
 
 - **Demo 1:** Rust toolchain (install from https://rustup.rs/)
 - **Demo 2:** Integration into existing React app
-- **Demo 3:** Node.js and npm, plus Gemini API key 
+- **Demo 3:** Node.js and npm, plus Gemini API key
