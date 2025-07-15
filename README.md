@@ -27,6 +27,7 @@ Then open http://127.0.0.1:8080 in your browser.
 A React application that breaks down high-level goals into actionable tasks using AI. Features hierarchical task management with time estimation and confidence levels.
 
 ![Demo 2 Screenshot](screenshots/demo2-screenshot.png)
+<img width="808" height="394" alt="Screenshot 2025-07-15 at 2 06 28 PM" src="https://github.com/user-attachments/assets/2880171a-51f9-4e41-8a4c-9d673cc1be9e" />
 
 **Tech Stack:**
 - React with TypeScript
