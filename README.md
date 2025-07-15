@@ -18,8 +18,9 @@ cargo run
 ```
 Then open http://127.0.0.1:8080 in your browser.
 
-## Demo 2: AI-Powered Goal Breakdown App
+## Demo 2: AI-Powered Goal Breakdown App 
 **Location:** `demo_2_claude/`
+link: [Demo 2 Live](https://claude.ai/public/artifacts/a62dd197-fcf0-4759-bc1e-d7f4a74ebea0)
 
 A React application that breaks down high-level goals into actionable tasks using AI. Features hierarchical task management with time estimation and confidence levels.
 
